@@ -26,7 +26,21 @@
 - Node.js 18+
 - [ffmpeg](https://ffmpeg.org/) (required by Whisper)
 
-### Install and run
+### Run
+
+From the repo root:
+
+```bash
+./start.sh                        # macOS / Linux
+start.bat                         # Windows
+```
+
+First run creates a Python venv, installs backend `requirements.txt`, and runs `npm install` for the frontend — then launches both servers. Subsequent runs skip setup and start immediately.
+
+- Backend → http://localhost:8000
+- Frontend → http://localhost:3000
+
+### Manual setup (if you prefer)
 
 ```bash
 # Backend
@@ -39,16 +53,6 @@ pip install -r requirements.txt
 cd ../frontend
 npm install
 ```
-
-Then from the repo root:
-
-```bash
-./start.sh                        # macOS / Linux
-start.bat                         # Windows
-```
-
-- Backend → http://localhost:8000
-- Frontend → http://localhost:3000
 
 ### Configuration
 
