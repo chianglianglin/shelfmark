@@ -1,0 +1,49 @@
+# Python
+backend/venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Local config + secrets
+.env
+backend/settings.json
+
+# User data — SQLite databases
+readwise.db
+backend/readwise.db
+frontend/readwise.db
+
+# User data — uploaded documents / audio
+backend/storage/
+
+# User data — Obsidian vault
+test_vault/
+
+# OCR model (downloaded on demand)
+frontend/eng.traineddata
+
+# Build / scratch artifacts
+graphify-out/
+pdf-agent-skills.zip
+pdf-reader.html
+skills-lock.json
+
+# Editor / tooling
+.superpowers/
+.claude/
+.worktrees/
+.gstack/
+.agents/
+.git.bak-pre-release/
+
+# Internal planning docs (kept locally, not published)
+docs/superpowers/
+
+# OS
+.DS_Store
+Thumbs.db
